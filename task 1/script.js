@@ -47,3 +47,12 @@ const match3 = function match3(str1, str2){
 
 match3('helLo', 'HEllo')
 
+/*
+    Стрелочная функция (как из ответа)
+*/
+
+const match4 = (str1, str2) => {
+	return str1.toLowerCase() == str2.toLowerCase();
+}
+
+alert( match4('hEllO', 'hellO') )
