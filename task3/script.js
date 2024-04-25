@@ -4,13 +4,8 @@
 Например: [1, -2, 5, 4] ⇒ [-4, -5, 2, -1].
 */
 
-let arr = [1, -2, 5, 4];
-
-function reverseAndNegate(arr) {
-    let i;
-    for (i > 0; i * -1;) {
-        console.log(arr)
-    }
+const reverseArrAndNegate = arr => {
+    return arr.reverse().map(value => -value)
 }
 
-reverseAndNegate(arr)
+console.log(reverseArrAndNegate([1, -2, 5, 4]));
