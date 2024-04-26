@@ -5,3 +5,11 @@
     В качестве проверки: calculate([15, 2, 3, 5, 6]) должна вернуть 20.
  */
 
+    const calculate = arr => {
+        return arr
+        .map(value => value % 2 === 0 ? value + 4 : value - 2)
+        .filter(value => !(value % 13 === 0))
+        .reduce((a, b) => a + b)
+    }
+
+    calculate([15, 2, 3, 5, 6])
